@@ -1381,6 +1381,7 @@ class Robinhood:
                 auth_method()
             except:
                 print(ex)
+                raise ex
     
     def submit_buy_order(self,
                      instrument_URL=None,
